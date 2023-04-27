@@ -1,0 +1,33 @@
+.mainImage {
+    text-align: center;
+    margin-top: 85px;
+    margin-bottom: -80px;
+}
+
+.list {
+    text-align: center;
+    margin-right: 30px;
+    animation: products-appear 1s ease-out forwards;
+}
+
+.list a {
+    text-decoration: none;
+    color: var(--color-primary-400);
+}
+
+.list a:hover,
+.list a:active{
+    color: var(--color-primary-400);
+}
+
+@keyframes products-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+    
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
